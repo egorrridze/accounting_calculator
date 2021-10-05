@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"tools","c":"fineCalc","l":"fineCalc()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"Main","l":"Main()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"Main","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"tools","c":"salaryTaxesCalc","l":"salaryTaxesCalc()","url":"%3Cinit%3E()"},{"p":"tools","c":"vatCalc","l":"vatCalc()","url":"%3Cinit%3E()"}]
