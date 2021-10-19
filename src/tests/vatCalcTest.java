@@ -14,9 +14,10 @@ class vatCalcTest {
         calc.setId(1);
         calc.setMoney(1000);
         calc.setPercents(18);
+        calc.tax();
 
-        double result = calc.tax();
-        assertEquals(847.46, result);
+        double result = calc.getTax();
+        assertEquals(152.54, result);
     }
 
     @Test
@@ -24,8 +25,9 @@ class vatCalcTest {
         calc.setId(2);
         calc.setMoney(1000);
         calc.setPercents(18);
+        calc.tax();
 
-        double result = calc.tax();
-        assertEquals(1, result);
+        double result = calc.getTax();
+        assertEquals(180, result);
     }
 }

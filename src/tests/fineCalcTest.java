@@ -1,21 +1,21 @@
 package tests;
 
-import org.junit.Before;
 import org.junit.Test;
 import tools.fineCalc;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class fineCalcTest {
 
-    fineCalc calc;
+    fineCalc calc = new fineCalc();
 
     @Test
-    void testCompanyFine(){
+    public void testCompanyFine(){
         calc.setId(1);
-        calc.setDaysOfDelay(30);
+        calc.setDaysOfDelay(18);
         calc.setDebtSum(50000);
+        calc.fine();
 
-        double result = calc.fine();
-        assertEquals(332.92, result);
+        double result = calc.getFine();
+        assertEquals(202.5, result);
     }
 }

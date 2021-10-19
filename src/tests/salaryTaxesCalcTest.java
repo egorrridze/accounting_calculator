@@ -1,6 +1,5 @@
 package tests;
 
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import tools.salaryTaxesCalc;
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,12 +11,13 @@ public class salaryTaxesCalcTest {
 
     @Test
     void testSalaryOnHands() {
-        calc.setWorkdays(7);
+        calc = new salaryTaxesCalc();
+        calc.setWorkdays(5);
         calc.setMonthWorkdays(21);
         calc.setSalary(100000);
-
-        double result = calc.salaryOnHands();
-        assertEquals(20714.29, result);
+        calc.salaryOnHands();
+        double result = calc.getSalaryOnHands();
+        assertEquals(20714.28, result);
     }
 
 }
